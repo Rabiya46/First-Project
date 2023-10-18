@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px;
+}
+
+.personContainer {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.personImages {
+  background-color: brown;
+  border-radius: 5px;
+}
+
+.personEmails {
+  font-weight: bold;
+}
+
+.personContainer {
+  --s: 350px;
+  --b: 8px;
+  --g: 14px;
+  --c: #4ecdc4;
+  width: var(--s);
+  outline: calc(var(--s) / 2) solid #0009;
+  outline-offset: calc(var(--s) / -2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.personContainer:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+  box-shadow: 1px 1px 20px 1px;
+}
+
+img + img {
+  border-radius: 50%;
+}
